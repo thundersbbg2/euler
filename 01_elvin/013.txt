@@ -1,10 +1,10 @@
-Problemde verilen bütün sayılar bir diziye atıldı. 
+Problemde verilen bütün sayılar bir diziye atıldı.
 
-"sum" isimli bir değişkende dizideki elemanlar toplandı. 
+Başlangıç değeri 0 olan "sum" isimli bir değişkende dizideki elemanlar toplandı.
 
 "tmp_sum" isimli bir değişkene "sum" değeri atandı.
 
-Bir while döngüsü ile tmp_sum 0'a eşit oluncaya kadar 10'a bölündü ve her dönüşte number_of_digits isimli değişkenin değeri 1 artırıldı.
+Bir while döngüsü ile tmp_sum 0'a eşit oluncaya kadar 10'a bölündü ve her dönüşte başlangıç değeri 0 olan "number_of_digits" isimli değişkenin değeri 1 artırıldı.
 
 "number_of_digits"te toplamın basamak sayısı elde edildikten sonra sum, 10 üzeri (number_of_digits - 10) ile tam sayı bölmesi yapılarak toplamın ilk 10 basamağı elde edildi.
 

@@ -1,0 +1,14 @@
+Problemde üçgensel sayılarda 500'den fazla çarpanı olan ilk sayının bulunmasını istiyor.
+
+Bir sayının çarpan sayısı, o sayıyının asal çarpanlarının üstlerinin 1 ile toplanarak çarpılmasıyla elde edilir.
+Örneğin 28 = 2^2*7^1 olduğundan 28'in çarpan sayısı (2+1)*(1+1) ile elde edilebilir.
+Yani eğer bir üçgensel sayıdaki asal çarpanların o sayıda kaç kere bulunduğu tespit edilirse, çarpan sayısı elde edilebilir.
+Bunun için önce asal sayılar elde edilmelidir.
+
+Asal sayıları elde edebilmek için "generatePrimes" isimli bir fonksiyon yazılmıştır. Fonksiyon parametre olarak asal sayıların yerleştirileceği bir dizi alır, bu dizinin ismi primes olsun. Fonksiyonun içerisinde elemanları indislerine eşit olan "numbers" isimli bir dizi daha oluşturulmuştur. (Örneğin numbers[5] = 5)
+
+"i" for döngüsünün indisi olmak üzere 2'den 100000'e kadar for döngüsü çalıştırılmıştır. "numbers"ın i. elemanı eğer 0'değilse bu eleman "primes" dizisine eklenir ve "numbers" dizisinde i. elemanın tam katları 0'a eşitlenir. Burada yapılan işlem asal bir sayı bulunduğunda onu "primes" dizisine eklemek ve asal sayının tam katlarını sıfırlamaktır. Bu yolla primes dizisi asal sayılarla doldurulur.
+
+Bundan sonra ise "number_of_factors" isimli fonksiyon oluşturulur. Bu fonksiyonun görevi ise parametre olarak gelen sayının (Bunu "number" değişkeni ile gösterelim.) kaç tane çarpanı olduğunu bulmaktır. "factors" isimli değişken oluşturulup değeri 1'e eşitlenir, bu fonksiyonun döndüreceği değerdir. "primes" dizisinin indisi "i" olmak üzere, "number"ın yarısı >= primes[i] olduğu sürece "i" artırılır. (Çünkü "number"ın yarısından büyük bir asal sayı "number"ın çarpanı olamaz.) While döngüsünün içinde "number"ın değerini depolayan "tmp_number" isimli bir değişken oluşturulur, bu değişken "primes[i]"ye tam bölündüğü sürece "count" isimli bir değişkenin değeri 1 artırılır, bu sayede count değişkeninde "number"ın içinde primes[i]'den kaç kere geçtiği elde edilmiş olur. Bu count değeri de 1 ile toplanarak factors değeri ile çarpılır ve factors'e eşitlenir.
+
+Son aşama olarak da bir while döngüsü kurulur. Döngü "number_of_factors(number) <= 500" koşulu sağlandığı sürece döner ve number değerine bir sonraki üçgensel sayı n * (n+1) / 2 formulü ile atanır. Döngü 500'den büyük çarpan sayısına sahip "number"ı bulduğunda kırılır, ekrana bulunan "number" yazdırılır.
