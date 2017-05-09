@@ -1,0 +1,15 @@
+Verilen üçgen "triangle" isimli bir diziye aktarıldı.
+
+"sum" isimli özyinelemeli bir fonksiyon yazıldı, fonksiyonun aldığı parametreler sırasıyla "triangle" dizisi, fonksiyon çağrıldığında dizide bakılan eleman, bu elemanın satır numarası.
+
+15 tane satır olduğu için fonksiyonun temel durum kontrolü girilen satırın 15 olduğu durum, bu durumda fonksiyon triangle[i] değerini döndürüyor.
+
+Eğer temel durumda değilse o zaman şu şekilde ikiye ayrılıyor:
+    left = triangle[i] + sum(triangle, i+n, n+1);
+    right = triangle[i] + sum(triangle, i+n+1, n+1);
+
+Burada "left" ağaca sol taraftan gidilirse elde edilen toplamları, "right" ağaca sağ taraftan gidilirse elde edilen toplamları göstermektedir. "i+n" bir sonraki satırdaki solda bulunan komşu elemanı, "i+n+1" ise bir sonraki satırda sağda bulunan komşu elemanı göstermektedir. "n+1" ise bir sonraki satırın numarasıdır.
+
+Bundan sonra "left" ve "right" değerleri birbirleriyle karşılaştırılır ve büyük olan geri döndürülür. Bu sayede ağacın el altına kadar left ve right ile inilir, yukarı doğru çıkılırken de büyük olan taraf kullanılarak yukarı çıkılır, en tepeye gelindiğinde ise fonksiyon en büyük toplamı geri döndürmüş olur.
+
+Son olarak bu toplam ekrana yazdırılır.
