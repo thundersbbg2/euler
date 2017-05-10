@@ -1,0 +1,2 @@
+SORU 3:
+       N deðeri okunur. Ý deðerine 3 atanýr. N sayýsý 2’ye bölünebildiði kadar bölünür. Bu aþamada en büyük asal çarpan 2’dir. Ýlk önce 3 atadýðýmýz i sayýsýna bölünebildiði kadar bölünür. Eðer bu iþlem gerçekleþirse en büyük asal çarpan olarak i l_prime’da saklanýr. Asal sayýlar tek sayýlar olduðundan  (2 dýþýnda) i 2 artýrýlýr ve bu iþlemler n 1 olana kadar devam eder. N bir olduðunda l_prime deðiþkeninde saklanan sayýmýz bizim n sayýsýnýn en büyük asal çarpanýdýr.
