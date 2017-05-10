@@ -1,0 +1,40 @@
+Problemde 0, 1..., 9'a kadar olan rakamlardan oluşan, küçükten büyüğe doğru 1 milyonuncu sayı isteniyor.
+Bu rakamlar "sayılar" isimli bir diziye atılmış olsun.
+Bir de istenen sonucu saklayacağımız "sonuç" isimli 10 gözden oluşan bir dizi olsun.
+
+"i" değişkeni kalan elemanların i! dizilişte olduğunu belirtsin.
+
+Başı 0 olan bir dizinin geriye kalan elemanlarının diziliş sayısı 9!'dir. "i"nin ilk değeri 9 olsun.
+
+"toplam" değişkeninde bu dizilim sayılarının toplamını tutalım.
+"k" değişkenini ise "sonuç" dizisinin gözlerine ulaşmak için kullanalım, ilk değeri 1 olsun.
+
+1 milyonun içinde bulunan "i! sayısı" k'ıncı gözde bulunan sayıyı verecektir. Örneğin 1 milyonun içinde 2 tane 9! + 7 tane 8! vardır. Buradan 1. göz 2, 2. göz 7 olarak bulunur. İlk 9 gözü doldurmak için aşağıdaki sözde kod kullanılabilir.
+
+while i > 0 do
+begin
+    kacTane = 0
+    while toplam < 1000000 do
+    begin
+        toplam = toplam + factorial(i)
+        kacTane++
+    end
+
+    toplam = toplam - factorial(i) // yukarıdaki while döngüsünde 1 milyon geçildiği için geçilen miktar geri çıkarılıyor.
+    kacTane = kacTane -1
+
+    i = i -1
+
+    sonuç[k] = sayılar[kacTane]
+    k = k + 1
+
+    for index = kacTane to 9 do // burada kullanılan sayı bir daha kullanılmaması için dizinin elemanları o sayının üzerine doğru 1 geriye kaydırılıyor.
+    begin
+        sayılar[index] = sayılar[index + 1]
+    end
+
+end
+
+0'dan 9'a kadar olan sayıların toplamı 45'tir. Kullanılmayan son sayı 10. göze atanacaktır. Bunun için ilk 9 gözdeki sayılar toplanır ve 45'ten çıkarılır.
+
+"sonuç" dizisinin elemanları yazdırılır.
