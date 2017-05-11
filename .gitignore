@@ -1,3 +1,4 @@
 bilgiler.txt
 *.o
-
+*.exe
+.gitignore
