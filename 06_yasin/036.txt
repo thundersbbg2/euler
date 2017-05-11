@@ -1,0 +1,5 @@
+Promblemde hem on, hem iki tabanında palindrom sayı olması istendiği için sayılar tek olmalıdır, çünkü sadece sonu tek olan sayıların 2 tabanında eşitleri 1 ile biter, bir sayı 0 ile başlayamayacağı için sonu 0 olan sayılar palindrom olamaz.
+
+1'den 1000000'a kadar ikişer ikişer artan bir for döngüsü çalıştılır. Her dönüşte sayının 2 tabanında ve 10 tabanında palindrom olması halinde "sum" değişkenine sayı eklenir. Döngü bittiğinde "sum" değişkeninin tuttuğu değer problemde istenen sayıdır.
+
+Döngünün içinde 2 ve 10 tabanında sayılarının palindrom olup olmadığının kontrolü ise bir fonksiyon ile yapılır. Fonksiyon parametre olarak string bir ifade içinde sayıyı alır ve yarısına kadar çalıştırılan bir döngüde i. ve (n-i+1). elemanların birbirine eşit olup olmadığı kontrol edilir, eşit olmayan eleman çıkarsa false çıkmazsa true döndürülür. Burada n string'in uzunluğu yani 2 ya da 10 tabanındaki sayının basamak sayısıdır. Fonksiyonu kullanabilmek için ise sayıyı 0 olana kadar 10'a ve 2'ye bölerek elde edilen kalanlardan string ifadeler elde edilir.
