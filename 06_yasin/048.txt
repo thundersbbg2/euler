@@ -1,0 +1,6 @@
+"toplam" isimli bir değişkeni 0'a ilklendirilir.
+1'den 1000'e kadar for döngüsü çalıştırılır. Döngünün indisi i olsun.
+
+Her dönüşte toplam'ın değer i^i kadar artırılır.
+
+Ekrana "toplam"ın 10^10'a bölümünden kalan yazdırılır.
