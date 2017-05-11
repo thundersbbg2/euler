@@ -1,0 +1,7 @@
+Problemde bir sayının basamaklarının 5. kuvvetlerinin toplamı o sayıya eşit olan sayıların toplamı isteniyor.
+
+Bu sayı en fazla 6 basamaklı olabilir, çünkü bütün basamaklar 9 olsa bile 9^5*6 354294 ediyor, sonuç 6 basamaklı sayıları geçemediğinden 6 basamaklı sayılara kadar kaba kuvvet yöntemi ile denenerek istenen sayılar elde edilebilir.
+
+Bunun için 10'dan 354294'e kadar for döngüsü açılır, sayı 10'a bölüne bölüne 0 oluncaya kadar bir while döngüsünde kalanlarının 5. kuvveti alınarak ve bulunan değer her basamakta "basamakToplamı" değişkeninde toplanır, bu değer sayıya eşitse "toplam" isimli değişkene sayı eklenir.
+
+Bulunan değer ekrana yazdırılır.
