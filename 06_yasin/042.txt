@@ -1,0 +1,11 @@
+Öncelikle ilk 35 tane üçgensel sayıyı içeren "üçgenselSayılar" isimli bir dizi oluşturuldu. "adet" isimli istenen kelimelerinin sayısının depolanacağı değişken de 0'a ilklendirildi.
+
+Kelimeler bir diziye alındı. For döngüsü ile kelimelerin bulunduğu dizide her kelimeye ulaşıldı. Burada "toplam" isimli kelimelerin toplam karakter değerlerini taşıyacak bir değişken 0'a ilklendirildi. İçeride bir for döngüsü daha çalıştırılarak kelimelerin bütün karakterlerine ulaşıldı. Kelimeler karakterlerden oluştuğu için ve karakterlerin sayı karşılığı da ASCII sayıları olduğu için her harfte "toplam" değişkenine aşağıdaki değer eklendi.
+
+toplam = toplam + kelimeler[i][j] - 'A' + 1
+
+Burada yapılan işlem ilk harf A olduğu için ASCII değerlerinden A çıkarıp 1 eklemek. Örneğin B ikinci harf ve ASCII karşılığı 66, A'nın ASCII karşılığı ise 65, yapılan işlemde 66 - 65 + 1 yapılarak 2 sonucu elde ediliyor. Bu şekilde bütün kelimelerin harf değerleri hesaplanıyor.
+
+Harf değeri hesaplanan kelimelenin harf değerinin üçgensel sayı olup olmadığı ise "üçgenselSayılar" dizisinde binarySearch ile aratıldı, eğer sonuç bulunduysa "adet" değişkeni 1 artırıldı.
+
+"adet" değişkeni ekrana yazdırıldı.
