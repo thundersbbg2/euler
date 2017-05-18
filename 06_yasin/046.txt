@@ -1,0 +1,9 @@
+Problemde "Goldbach's other conjecture" olarak nitelendirilen kural bütün tek kompozit sayıların, bir asal ve bir sayının karesinin iki katına eşit olduğu ama bu kuralın yanlış olduğu söyleniyor, bu kuralı bozan ilk kompozit sayı isteniyor.
+
+Bunun için 12. sorudaki "generatePrimes" fonksiyonu kullanılmıştır, "primes" dizisine ilk 10000 asal sayı üretilmiştir, bu üretim yapılırken kullanılan "numbers" dizisinde ise sadece kompozit sayıların indisi 0 olarak kaldığından "composites" isimli tek kompozit sayıları barındıran dizi "numbers" dizisi kullanılarak oluşturulabilir. Bunun için "numbers" dizisi üzerinde bir for döngüsü çalıştırılır ve "numbers" dizisinin her iterasyonunda 0'a eşit olan ve tek olan sayıları "composites" dizisine eklenir.
+
+Bir while döngüsü çalıştırılır ve her iterasyonda "isGoldbachComposite" fonksiyonu çalıştırılır, fonksiyona "composites" dizisindeki sayılar sırayla yollanır, eğer fonksiyon false değeri döndürürse döngü durur. False değeri dönmesine sebep olan sayı istenen sayıdır.
+
+"isGoldbachComposite" fonksiyonu ise şu şekilde çalışır: Bakılacak kompozit sayı ve asal sayıların bulunduğu diziyi parametre olarak alır. Asal sayılar dizisindeki sayı kompozit sayıdan küçük olduğu sürece bir while döngüsü çalıştırılır, döngüde ise
+    karekok((kompozit sayı - asal sayı) / 2)
+ifadesinin tam sayı olup olmadığı kontrol edilir. Bunun için ifade en yakın tam sayıya yuvarlanır ve yuvarlanmış ifadei ifadeye eşit mi bakılır. Eğer tam sayı ise döngü durur, fonksiyon true döndürür, eğer döngüden çıkılana kadar böyle bir durumla karşılaşılmazsa fonksiyon false döndürür.
