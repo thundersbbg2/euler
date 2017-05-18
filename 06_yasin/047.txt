@@ -1,0 +1,5 @@
+Problemde art arda gelen 4 tane 4 asal çarpana sahip ilk sayı isteniyor.
+
+Bunun için problem 12'deki "generatePrimes" fonksiyonu ile ilk 10000 asal sayıyı içeren "primes" dizisi üretilmiştir. "count" değişkeni 0, "number" değişkeni 2 olarak ilklendirilmiştir. Sonra da count 4'ten küçük olduğu sürece çalışan bir while döngüsü açılmıştır. While döngüsü içinde eğer "number"ın asal çarpan sayısı 4 değilse count 0'a eşitlenir, değilse count 1 artırılır. "number" her iterasyonda bir artırılır.
+
+Asal çarpan sayısını kontrol ederken "number_of_prime_factors" isimli fonksiyona o iterasyondaki "number" gönderilir, burada da "number"ın yarısına gelene kadar döngü içerisinde "number"ın "primes" dizisindeki asal sayı ile tam bölündüğü durumda "primeFactors" bir artırılır ve fonksiyondan geriye "primeFactors" döndürülür.
