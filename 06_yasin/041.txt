@@ -1,0 +1,5 @@
+"number" değişkeni 999999999'a ilklendirilir, while döngüsü içerisinde ikişer azalarak iterasyon yapar. Döngü içerisinde iç içe iki koşul vardır, birinci koşulda sayı "isPandigital" fonksiyonu ile pandigital olup olmadığı kontrol edilir, eğer öyleyse ikinci koşulda "isPrime" fonksiyonu ile asal olup olmadığı kontrol edilir, asalsa döngü durur. değilse iki azalarak devam eder.
+
+"isPandigital" fonksiyonunda "numerals" isimli string tipinde bir değişken "123456789"a ilklendirilir. Fonksiyona parametre olarak gelen "number" basamaklarına ayrılarak bir karakter dizisine dönüştürülür, bu dizinin ismi "num" olsun. Dizi sıralanır, ve dizinin uzunluğuna kadar "numerals" ve "num" değişkenlerinin elemanları aynı mı diye bakılır, aynıysa fonksiyon true eğer farklı karakter varsa fonksiyon false değerini döndürür.
+
+"isPrime" fonksiyonunda "number" parametre olarak alınır. 3'ten i^2 küçük eşit "number" olana dek bir while döngüsü çalıştırılır ve döngüde "number mod i" 0'a eşitse fonksiyon false, eğer döngüde hiçbir "number mod i" değeri 0'a eşit olmadan çıkılırsa fonksiyon true değerini döndürür.
