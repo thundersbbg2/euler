@@ -28,7 +28,7 @@ public class p034 {
 
 		}
 
-		System.out.println(sum);
+		System.out.println(sum); // 40730
 
 	}
 
