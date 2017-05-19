@@ -1,0 +1,16 @@
+İstenen basamaklar arasında 1 milyonuncu basamak da olduğu için öncelikle kaçıncı sayıya gelindiğinde 1 milyon basamaktan büyük eşit sayıda basamak oluştuğu bulunmalıdır, bunun için "i" 1'e, "number" 0'a ilklendirilirse,
+
+while (number <= 1000000) {
+    number += i * 9 * Math.pow(10, i - 1); // i basamak sayısı olmak üzere, i basamaklı 9 * 10^(i-1) sayı vardır, bu değer i ile çarpılarak ve "number"a eklenerek i'inci basamağa kadar oluşan toplam basamak sayısı bulunabilir.
+
+    i++;
+}
+
+while döngüsü sonucunda elde edilen i-1 değeri istenen basamakların ilk 10^(i-1) sayı içinde olduğunu gösterir.
+
+"fraction" isimli bir karakter tipinde elemanlar depolayacak bir bağlı liste oluşturulur. 1'den 10^(i-1)'e kadar for döngüsü çalıştırılır ve döngünün içinde şu işlemler yapılır:
+
+Döngünün indisi j olsun.
+j'inci sayı basamaklarına ayrılır ve basamaklar bir karakter dizisine atılır, bu dizideki karakterler fraction bağlı listesine eklenir.
+
+Son olarak istenen basamaklara bağlı listeden erişilir ve istenen çarpım yapılarak sonuca ulaşılır.
