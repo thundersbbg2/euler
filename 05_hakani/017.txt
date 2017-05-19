@@ -1,0 +1,29 @@
+bir_dokuz = "onetwothreefourfivesixseveneightnine";
+on_doksan = "twentythirtyfortyfiftysixtyseventyeightyninety";
+on_ondokuz = "teneleventwelvethirteenfourteenfifteensixteenseventeeneighteennineteen";
+yuz = "hundred";
+ve = "and";
+birbin = "onethousand";
+
+Yukaridakiler string değişkenler olsun. "uzunluk" fonksiyonu içerisine aldığı string ifadenin uzunluğunu(karakter sayısını) vermek üzere aşağıdaki işlemler yapılır.
+
+bir_dokuz_icerenler = (9 + 9*9 + 100) * uzunluk(bir_dokuz) (1)
+on_doksan_icerenler = (10 + 9*10) * uzunluk(on_doksan) (2)
+on_ondokuz_icerlenler = (1 + 1*9) * uzunluk(on_ondokuz) (3)
+yuz_icerenler = 900 * uzunluk(yuz) (4)
+ve_icerenler = (900-9) * uzunluk(ve) (5)
+bin = uzunluk(birbin) (6)
+
+1. işlemde, içerisinde "one" geçen sayılar hesaplanıp bir_dokuz'un uzunluğu ile çarpılarak "bir_dokuz" ifadelerinin toplam karakter sayısı elde edilmiştir. Yapılan işlemde 1-9 arasında 9 kere, 10-90 arasında 9*9 kere, ve "one hundred, one hundred and ninefive" gibi durumların başına gelen de 100 tane "one" vardır.
+
+2. işlemde, içersinde "twenty" geçen sayılar hesaplanıp on_doksan'ın uzunluğu ile çarpılarak "on_doksan" ifadelerinin toplam karakter sayısı elde edilmiştir. Yapılan işlemde 10-100 arasında "twenty, twenty nine" şeklinde geçen 10 tane, 100-1000 arasında her yüzde 10 kere olmak üzere 9*10 kere "twenty" vardır.
+
+3. işlemde, içerisinde "ten" geçen sayılar hesaplanıp on_ondokuz'un uzunluğu ile çarpılarak "on_ondokuz" ifadelerinin toplam karakter sayısı elde edilmiştir. Yapılan işlemde 10-19 arasında 1 tane, 100-1000 arasında ise her yüzde 1 tane olmak üzere 1*9 tane "on_ondokuz" vardır.
+
+4. işlemde, içerisinde "hundred" geçen sayılar hesaplanıp yuz'un uzunluğu ile çarpılarak "yuz" ifadelereninin toplam karakter sayısı elde edilmiştir. 900 tane "hundred" ifadesi vardır, çünkü üç basamaklı 900 sayı vardır ve bunların hepsinde "hundred" geçer.
+
+5. işlemde, içerisinde "and" geçen sayılar hesaplanıp ve'nin uzunluğu ile çarpılarak "ve" ifadelerinin toplam karakter sayısı elde edilmiştir. "one hundred, two hundred" gibi ifadeler dışındaki bütün üç basamaklı sayılarda "and" ifadesi vardır, 900 üç basamaklı sayı, 9 tane "100, 200..." şeklinde sayı olduğundan 891 tane "ve" içeren sayı vardır.
+
+6. işlemde, 1000, yani "onethousand" ifadesinin karakter sayısı hesaplanmıştır.
+
+İşlemler sonucunda elde edilen değişkenlerin toplamı istenen sonuçtur.
