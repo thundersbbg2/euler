@@ -1,0 +1,9 @@
+Problemin çözümünü hesaplamadan önce bu sayıların en büyüğünün en çok kaç olabileceği bulunmalıdır.
+
+Bütün basamakları 9 olduğu durumda sayının basamaklarını faktöriyelleri toplamı 9! * n olacaktır. Sayının değeri ise 9 * (1 + 10 + ... + 10 ^ (n-1)) olacaktır.
+
+9 * (1 + 10 + ... + 10 ^ (n-1)) = 9 * (10 ^ (n-1+1) - 1) / (10 - 1) = 10^n - 1
+
+Sayının değeri bu şekilde bulunduktan sonra yapılması gereken n'in en büyük değerini bulmaktır, yani 9! * n < 10 ^ n - 1 eşitsizliğini çözmektir. Burada n'in alabileceği en büyük değer yaklaşık 6.5 olarak bulunur. (WolframAlpha ile hesaplandı.) Yani istenen sayılar en fazla 6 basamaklı olabilir.
+
+"sum" isimli bir değişken oluşturup 0'a ilklendirilir. 10'dan 1 milyona kadar bir for döngüsü çalıştırılır. Döngünün indisi "i" olsun. Döngü içersinde "sum_of_digits_factorial" değişkene 0 ve "tmp_num" isimli değişkene "i" atanır. tmp_num 0'dan farklı olduğu sürece dönen bir while döngüsünde "tmp_num mod 10" ile son basamak alınır, bu basamağın faktöriyeli hesaplanıp "sum_of_digits_factorial"e eklenir. tmp_num 10'a bölünür. Bu şekilde while döngüsünde sayının bütün basamaklarının faktöriyelleri toplamı "sum_of_digits_factorial" değişkeninde depolanmış olur. Bundan sonra ise "i", "sum_of_digits_factorial"e eşitse "sum" değişkenine "i" eklenir. For döngüsünden çıkıldığında elde edilen "sum" istenilen değerdir.
