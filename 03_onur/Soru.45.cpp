@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 long int Hexa(long int);
 long int Penta(long int);
 long int isPenta(long int , long int);
@@ -17,7 +16,7 @@ int main ()
 		result = Hexa(i);
 	}
 	 i = 2*i - 1;
-	printf("Bulunan triangle, hexagonal ve pentagonal sayi : %ld",i);
+	printf("Bulunan triangle, hexagonal ve pentagonal sayi : %ld\n", result);
 	return 0;
 }
 
