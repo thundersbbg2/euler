@@ -1,0 +1,1 @@
+"toplam" değişkeni 0 olarak ilklendirilir. 2 milyon elemanlık bir dizi açılır ve bütün elemanlar 1'e eşitlenir. Dizi üzerinde 2'den 2 milyona kadar for döngüsü ile gezilir, iterasyon içerisinde eleman 1 ise "toplam" değişkenine eklenir ve bir while döngüsü ile bu elemanın tam katları dizide 0'a eşitlenir. Döngü bittikten elde edilen "toplam" istenilen değerdir.
