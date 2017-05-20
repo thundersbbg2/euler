@@ -1,0 +1,1 @@
+"distinctPower" isimli bir bağlı liste oluşturulur. "a" indisli 2'den 100'e kadar bir for döngüsü açılır, içine "b" indisli 2'den 100'e kadar bir for döngüsü açılır. Eğer "distinctPower" bağlı listesinde a^b yoksa listeye eklenir. Döngülerden çıkıldığında "distinctPower" bağlı listesinin eleman sayısı istenilen sayıdır.
