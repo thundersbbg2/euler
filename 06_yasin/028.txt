@@ -1,0 +1,5 @@
+Ortadaki değer 1 olduğu için sonucu tutacak "sum" değişkeni 1 ile ilklendirilir. İncelendiğinde değerler 4 köşeyi dolaşıp "sum"a ekleniyor. Örneğin 3, 5, 7, 9, 13, 17, 21, 25... gibi. Her dörtte bir merkezden 1 uzaklaşıldığı için çap 2 artıyor, ve artış miktarı da 2 artıyor, başlangıçta 3, 5 gibi artış miktarı 2 iken, bir dış spiralde 17, 21 gibi artış miktarı 2 artarak 4 oluyor. Her spiral sağ üst köşede o zamana kadarki kenar uzunluklarının çarpımı değerinde bitiyor, örnekte verilen spiral 5x5 uzunlukta olduğundan 25'te bittiği gibi istenen uzunlukta da 1001x1001 sayısında spiral bitmelidir. Buna göre "i" değişkeni 1, ve artış miktarını belirleyen "increment" değişkeni 0'a ilklendirilir.
+
+While döngüsü açılır. İçeride de 1'den 4'e for döngüsü açılır ve sum değeri for döngüsünde "i" kadar artırılır ve "i" değeri her iterasyonda 2 artırılır. For döngüsünden çıkıldığında "increment" değişkeni 2 artırılır ve while döngüsü yeni bir iterasyon yapar.
+
+Eklenen "i" sayısı 1001'in karesi olduğunda döngü durdurulur, "sum" değeri ekrana bastırılır.
