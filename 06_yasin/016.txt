@@ -1,0 +1,1 @@
+2 üzeri 1000 hesaplanarak "sayi" isimli değişkene aktarılır. "toplam" değişkeni 0 olarak ilklendirilir. "sayi" 0 olmadığı sürece dönen bir while döngüsü oluşturulur. "toplam" değişkenine "sayi mod 10" eklenir ve "sayi" 10'a tam sayı bölmesi ile bölünür. Bu şekilde bütün basamaklar "toplam" değişkenine eklenmiş olur. Döngüden çıkıldığında "toplam" değişkeni ekrana yazdırılır.
