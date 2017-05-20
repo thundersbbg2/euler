@@ -1,0 +1,11 @@
+Bu soruyu çözmek için öncelikle 10 basamaklı bütün pandigital sayılar üretilmelidir, bunu yapmak için permütasyon kullanılmalıdır, bunun için aşağıdaki hazır algoritma kullanılmıştır.
+
+1-Find the largest index k such that a[k] < a[k + 1]. If no such index exists, the permutation is the last permutation.
+2-Find the largest index l greater than k such that a[k] < a[l].
+3-Swap the value of a[k] with that of a[l].
+4-Reverse the sequence from a[k + 1] up to and including the final element a[n].
+Kaynak: https://en.wikipedia.org/wiki/Permutation#Algorithms_to_generate_permutations
+
+Her permütasyon ile yeni bir sayı üretildikten sonra "substring_divisibility" fonksiyonuna gider ve sayının problemde verilen kurala uygun olup olmadığı kontrol edilir, uygun olan sayılar toplanır ve ekrana yazdırılır.
+
+"substring_divisibility" fonksiyonunda "nums" isimli bir dizi oluşturulup bu dizide sırasıyla soruda verilen, tam bölünüp bölünmediği test edilecek sayılar yerleştirilmiştir. "i" bu dizinin indisidir. "j" 6 ile ilklendirilmiştir, çünkü ilk kontrol edilecek basamaklar 2,3,4. basamaklardır, ve sayı 10 basamaklı olduğundan, 10 üzeri 6 ile bölünüp, 10 üzeri 3 ile kalanı alınırsa istenilen basamaklar elde edilecektir. Bir while döngüsü açılır ve "i" 7'den küçük ve sayılar tam bölündüğü sürece döner. Döngünün içinde sayı 10 üzeri j'ye bölünüp, 10 üzeri 3 ile kalanı alınarak nums[i]'ye bölümünden kalana bakılır, 0 değilse döngü durur ve fonksiyon false döndürür. 0'sa "i" 1 artar, "j" bir azalır ve kontroller devam eder.
