@@ -1,0 +1,6 @@
+"x" ve "y" değişkenleri fibonacci sayısının ilk 2 terimini temsil etsin ve 1'e ilklendirilsinler, "toplam" değişkeni 0'a ilklendirilsin. "y" 4 milyondan küçük olduğu sürece bir while döngüsü dönsün ve içerisinde aşağıdaki işlemler gerçekleşsin:
+
+y = x + y
+x = y - x
+
+Bu işlemlerin sonucunda "y" ve "x" değişkenleri bir soru fibonacci terimlerine kayarlar. Eğer "y mod 2" 0'a eşitse "toplam" değşkenine y eklenir. Döngüden çıkıldığında "toplam" değişkeni yazdırılır.
