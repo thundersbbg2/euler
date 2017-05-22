@@ -1,0 +1,3 @@
+"sum_of_squares" isminde bir değişken 0'a eşitlenir. 1'den 100'e kadar for döngüsü çalıştırılır, döngünün indisinin karesi sum_of_squares değişkenine eklenir. "square_of_sum" isminde bir değişken 0'a eşitlenir. 1'den 100'e kadar for döngüsü çalıştırılır, döngünün indisi square_of_sum değişkenine eklenir. "square_of_sum" değişkeninin karesi alınır.
+
+"square_of_sum" - "sum_of_squares" farkı ekrana yazdırılır.
